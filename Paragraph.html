@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paragraph</title>
+</head>
+<body>
+	
+	<p id="para1" onclick="start1()"> Click <b><u>HERE</u></b> to change Paragraph 1 text. </p>
+	<p id="para2" onclick="start2()"> Click <b><u>HERE</u></b> to change Paragraph 2 text.</p>
+	Click <button id="b" onclick="change()"> HERE </button> to change color
+	<script type="text/javascript">
+
+function start1()
+{
+	document.getElementById("para1").innerText = "The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.";
+}
+function start2()
+{
+	document.getElementById("para2").innerHTML = "A Web page is a document. This document can be either displayed in the browser window or as the HTML source. But it is the same document in both cases. The Document Object Model (DOM) represents that same document so it can be manipulated. The DOM is an object-oriented epresentation of the web page, which can be modified with a scripting language such as JavaScript.";
+}
+function change()
+{
+document.getElementById("para1").style.color = "purple";
+document.getElementById("para2").style.color = "red";
+}
+document.body.style.backgroundColor= "lightgrey";
+
+</script>
+</body>
+</html>
